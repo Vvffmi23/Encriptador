@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+
+    <title>Encriptador de Texto</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="titulo-logo">
+        <img src="imagenes/logo.png" alt="logo" class="logo">
+        <h1 class="titulo">ENCRIPTADOR DE TEXTO</h1>
+
+    </header>
+
+    <!-- TEXTO A ENCRIPTAR -->
+
+    <main>
+        <section class="primero">
+            <textarea class="texto" placeholder="Ingrese el texto aqui..." cols="30" rows="10"></textarea>
+            <div class="informacion">
+                <img class="icon" src="imagenes/icons8-exclamation-mark-64.png" alt="">
+                <h6 class="info">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="btns">
+                <button class="btn-encriptar" onclick="btnEncriptar()">
+                    Encriptar
+                </button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+        <section class="segundo">
+
+            <textarea class="texto-encriptado" cols="30" rows="10"></textarea>
+            <div>
+                <button class="btn-copiar" onclick="copiar()">
+                    Copiar
+                </button>
+            </div>
+        </section>
+    </main>  
+<script src="script.js"></script>
+</body>
+</html>
